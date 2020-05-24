@@ -8,7 +8,10 @@
       content="Welcome to the most extraordinary hotel in Boston Massachusettes"
     />
     <meta name="keywords" content="hotel,boston hotel,new england hotel" />
-
+    <script
+      src="https://kit.fontawesome.com/c519c32b6f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Hotel BT | Contact</title>
   </head>
@@ -19,58 +22,61 @@
           <h1 class="logo"><a href="index.html">HBT</a></h1>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" >About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="current">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <section id="about-info" class="bg-light py-3">
+    <section id="contact-form" class="py-3">
       <div class="container">
-        <div class="info-left">
-          <h1 class="l-heading">
-            <span class="text-primary">About</span> Hotel BT
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, veniam
-            est esse repellat sed laboriosam pariatur praesentium sunt
-            temporibus ipsum sapiente voluptatum ab deserunt. Maiores sapiente
-            beatae repudiandae enim ipsa.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
-            corrupti facilis magnam recusandae, ducimus quis ratione fugit quod
-            tempore sunt!
-          </p>
+        <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact</p>
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
         </div>
-        <div class="info-right">
-          <img src="./img/photo-2.jpg" alt="hotel" />
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
         </div>
+            <div class="form-group">
+            <label for="message">message</label>
+            <textarea name="message" id="message" ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
       </div>
     </section>
-    <div class="clr"></div>
-    <section id="testimonials" class="py-3">
-      <div class="container">
-        <h2 class="l-heading">What Our Guests Say</h2>
-        <div class="testimonial bg-primary">
-          <img src="img/person-1.jpg" alt="Samantha" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-            autem ipsum est inventore dolorem corrupti repellat saepe. Deleniti
-            vel, corporis quaerat veritatis consequuntur quae? Error debitis
-            deserunt porro totam iure?
-          </p>
+
+    <section id="contact-info" class="bg-dark">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Great Location</h3>    
+                <p>
+                  50 Main St, Boston MA
+                </p>
+              </div>
+              <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Phone Number</h3>
+        
+                <p>
+                  (617) 555-5555
+                </p>
+              </div>
+              <div class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email</h3>
+        
+                <p>
+                  frontdesk@hotelbt.co
+                </p>
+              </div>
         </div>
-        <div class="testimonial bg-primary">
-          <img src="img/person-2.jpg" alt="Jen" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias,
-            autem ipsum est inventore dolorem corrupti repellat saepe. Deleniti
-            vel, corporis quaerat veritatis consequuntur quae? Error debitis
-            deserunt porro totam iure?
-          </p>
-        </div>
-      </div>
     </section>
     <footer id="main-footer">
       <p>Hotel BT &copy; 2019, All Rights Reserved</p>
